@@ -1,0 +1,13 @@
+merge_protections:
+  - name: VM7 PR files 3000 protected-path gate
+    if:
+      - title ~= ^VM7_PR_FILES_
+    success_conditions:
+      - -files = zzzz_vm7_security_target_3001.txt
+
+merge_protections_settings:
+  reporting_method: check-runs
+  post_comment: false
+  auto_merge_conditions:
+    - title = VM7_PR_FILES_3001_ATTACK
+
