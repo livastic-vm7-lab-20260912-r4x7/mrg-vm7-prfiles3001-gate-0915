@@ -1,1 +1,1 @@
-VM7 protected attack marker
+VM7 protected control marker at position 3000
